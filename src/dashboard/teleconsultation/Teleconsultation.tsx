@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import AdminDashboardLayout from '../../component/AdminDashboardLayout';
 import { FaCalendarAlt, FaUserMd, FaNotesMedical, FaPrescriptionBottleAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
+import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie } from 'recharts';
 
 const Teleconsultation = () => {
   // Sample appointments data
-  const [appointments, setAppointments] = useState([
+  const appointments = [
     {
       id: "apt_12345",
       patientId: "user_789",
@@ -72,10 +72,10 @@ const Teleconsultation = () => {
       duration: 30,
       notes: "First consultation"
     }
-  ]);
+  ];
 
   // Sample doctors data
-  const [doctors, setDoctors] = useState([
+  const doctors = [
     {
       id: "doc_123",
       name: "Dr. Sarah Brown",
@@ -121,10 +121,10 @@ const Teleconsultation = () => {
       totalConsultations: 198,
       status: "Off-duty"
     }
-  ]);
+  ];
 
   // Sample consultation notes data
-  const [consultationNotes, setConsultationNotes] = useState([
+  const consultationNotes = [
     {
       id: "note_7890",
       appointmentId: "apt_12346",
@@ -145,7 +145,7 @@ const Teleconsultation = () => {
       details: "Reduced irritation and redness. Current treatment showing positive results.",
       followUp: "1 month"
     }
-  ]);
+  ];
 
   // Filter states
   const [statusFilter, setStatusFilter] = useState('All');

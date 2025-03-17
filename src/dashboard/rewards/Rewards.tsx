@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import AdminDashboardLayout from '../../component/AdminDashboardLayout'
-import { FaUserPlus, FaGift, FaCoins, FaTrophy } from 'react-icons/fa'
-import { BsArrowUpRight } from 'react-icons/bs'
+import { FaUserPlus, FaCoins, FaTrophy } from 'react-icons/fa'
 
 const Rewards = () => {
   const [activeTab, setActiveTab] = useState('referrals')

@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import AdminDashboardLayout from '../../component/AdminDashboardLayout';
 import { FaRegCreditCard, FaHistory, FaTag, FaUndo, FaShoppingCart } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { PieChart, Pie, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const Subscription = () => {
   // Sample subscription data for demonstration
-  const [subscriptions, setSubscriptions] = useState([
+  const subscriptions = [
     {
       id: "sub_12345",
       userId: "user_789",
@@ -67,10 +67,10 @@ const Subscription = () => {
       paymentMethod: "PayPal",
       autoRenew: false
     }
-  ]);
+  ];
 
   // Sample payment data
-  const [payments, setPayments] = useState([
+  const payments = [
     {
       id: "pay_56789",
       userId: "user_789",
@@ -121,10 +121,10 @@ const Subscription = () => {
       status: "Completed",
       description: "Pay-Per-Use: Teleconsultation"
     }
-  ]);
+  ];
 
   // Sample promo codes
-  const [promoCodes, setPromoCodes] = useState([
+  const promoCodes = [
     {
       code: "WELCOME25",
       discount: "25%",
@@ -152,7 +152,7 @@ const Subscription = () => {
       usedCount: 189,
       status: "Active"
     }
-  ]);
+  ];
 
   // Filter states
   const [planFilter, setPlanFilter] = useState('All');

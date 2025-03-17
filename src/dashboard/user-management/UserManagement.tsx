@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const UserManagement = () => {
   // Sample user data for demonstration
-  const [users, setUsers] = useState([
+  const users =[
     {
       id: 1,
       name: 'John Doe',
@@ -63,7 +63,7 @@ const UserManagement = () => {
       type: 'Doctor',
       verificationStatus: 'Pending'
     }
-  ]);
+  ];
 
   const [searchTerm, setSearchTerm] = useState('');
   const [filterType, setFilterType] = useState('All');

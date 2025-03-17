@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import AdminDashboardLayout from '../../component/AdminDashboardLayout';
-import { FaUsers, FaUserTie, FaUserMd, FaCalendarCheck, FaChartLine, FaRobot, FaRegCreditCard } from 'react-icons/fa';
+import { FaUsers, FaUserTie, FaUserMd, FaCalendarCheck, FaRobot, FaRegCreditCard } from 'react-icons/fa';
 import { PieChart, Pie, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, BarChart, Bar } from 'recharts';
 
 const Home = () => {
   // Sample data for demonstration
-  const [stats, setStats] = useState({
+  const stats = {
     totalUsers: 8245,
     premiumUsers: 3492,
     doctors: 142,
@@ -13,7 +13,7 @@ const Home = () => {
     aiScansPerWeek: 1874,
     activeSubscriptions: 3286,
     revenueGrowth: '+12.5%'
-  });
+  };
 
   // Sample data for charts
   const userGrowthData = [

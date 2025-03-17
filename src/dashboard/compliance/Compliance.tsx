@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import AdminDashboardLayout from '../../component/AdminDashboardLayout'
 import { MdSecurity, MdAdminPanelSettings, MdPrivacyTip } from 'react-icons/md'
-import { FaUserShield, FaLock, FaUnlock, FaUserCog, FaExclamationTriangle } from 'react-icons/fa'
-import { BsShieldCheck, BsShieldExclamation } from 'react-icons/bs'
+import { FaUserCog } from 'react-icons/fa'
 
 const Compliance = () => {
   const [activeTab, setActiveTab] = useState('gdpr')

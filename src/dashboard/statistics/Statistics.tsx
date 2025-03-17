@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import AdminDashboardLayout from '../../component/AdminDashboardLayout';
-import { FaUsers, FaChartLine, FaRobot, FaDollarSign, FaCalendarCheck } from 'react-icons/fa';
+import { FaUsers, FaChartLine, FaRobot, FaDollarSign } from 'react-icons/fa';
 import { LineChart, Line, BarChart, Bar, PieChart, Pie, AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const Statistics = () => {

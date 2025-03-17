@@ -1,8 +1,7 @@
-import { ReactNode, useEffect, useState } from "react";
+import { ReactNode, useState } from "react";
 // import SidebarPage from "./Sidebar";
 import Header from "./shared/Header";
 import "react-toastify/dist/ReactToastify.css";
-import { useNavigate } from "react-router-dom";
 import SidebarPage from "./Sidebar";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
@@ -16,7 +15,7 @@ const AdminDashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
   const [showSideBar, setShowSideBar] = useState(false);
   // const [showNotification, setShowNotification] = useState<boolean>(false);
   // const [openM, setOpen] = useState(false);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   // useEffect(() => {
   //   const token = localStorage.getItem("auth_token");
@@ -80,7 +79,7 @@ const AdminDashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
               {openDrawer ? (
                 <AiOutlineClose className="w-4 h-4 md:w-6 md:h-6 font-bold" />
               ) : (
-                <AiOutlineMenu className="w-4 h-4 md:w-6 md:h-6 font-bold" />
+                <AiOutlineMenu className="w-6 h-6 md:w-6 md:h-6 text-white font-bold" />
               )}
             </button>
             <div className="lg:hidden bg-[#090F2F] shadow-xl relative w-full z-50 lg:px-[3%] pt-5 px-[1%]">

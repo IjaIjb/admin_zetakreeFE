@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import AdminDashboardLayout from '../../component/AdminDashboardLayout'
 import { MdSettings, MdApi, MdSpeed, MdBackup, MdToggleOn, MdToggleOff } from 'react-icons/md'
-import { FaServer, FaDatabase, FaExchangeAlt, FaCog } from 'react-icons/fa'
+import { FaCog } from 'react-icons/fa'
 
 const System = () => {
   const [activeTab, setActiveTab] = useState('features')

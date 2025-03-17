@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import AdminDashboardLayout from '../../component/AdminDashboardLayout'
-import { MdAnnouncement, MdMessage, MdOutlineSmartToy, MdNotifications } from 'react-icons/md'
+import { MdAnnouncement, MdMessage, MdOutlineSmartToy } from 'react-icons/md'
 import { FaRegEdit, FaTrash, FaEye, FaRegClock } from 'react-icons/fa'
 
 const Content = () => {
